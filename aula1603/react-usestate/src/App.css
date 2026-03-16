@@ -1,0 +1,56 @@
+.titulo{
+  color: rgb(255, 255, 255);
+  background-color: blueviolet;
+  padding: 25px;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, rgb(161,81,235), rgb(120,40,200));
+
+  height: 400px;
+  width: 100%;
+
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  background: rgb(193, 143, 203);
+  padding: 30px;
+  border-radius: 10px;
+
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+input{
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.botao{
+  background-color: rgb(152,191,76);
+  border-radius: 6px;
+  border: none;
+
+  height: 35px;
+  font-size: 16px;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.botao:hover{
+  background-color: rgb(120,160,60);
+}
+
+
