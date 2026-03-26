@@ -1,18 +1,18 @@
 const estudantes = [
-    { id: 1, nome: 'Vitoria', disciplina: 'portugues', ra: 12345},
-    { id: 2, nome: 'Luís', disciplina: 'geografia', ra: 68943},
-    { id: 3, nome: 'Noemi', disciplina: 'matematica', ra: 13355} 
+    { id: 1, nome: 'Vitoria', fruta: 'jabuticaba', ra: 12345},
+    { id: 2, nome: 'Luís', fruta: 'abacaxi', ra: 68943},
+    { id: 3, nome: 'Noemi', fruta: 'amora', ra: 13355} 
 ]
 
 
 export default function ListaFilter({titulo}){
-    const lista = estudantes.filter(estudante => estudante.disciplina == 'matematica')
+    const lista = estudantes.filter(estudante => estudante.fruta == 'amora')
     
     const listaEstudantes = lista.map((estudante) =>{
         return <li key={estudante.id}>
             <h3>{estudante.nome}</h3>
             <p>{estudante.ra}</p>
-            <p>{estudante.disciplina}</p>
+            <p>{estudante.fruta}</p>
         </li>
     })
     return(

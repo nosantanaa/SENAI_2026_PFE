@@ -1,0 +1,13 @@
+import './propsNomeado.jsx'
+
+
+//props nomeada // props especificada
+export default function PropsName({titulo, subtitulo, status = 'true'}){
+    return(
+        <>
+        <h1>{titulo}</h1>
+        <h3>{subtitulo}</h3>
+        <span>o status é {status}</span>
+        </>
+    )
+}

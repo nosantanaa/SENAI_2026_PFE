@@ -67,7 +67,6 @@ function limpar(){
 <>
  
  <h1 className="titulo">{titulo}</h1>
- 
  <div className="container">
         
         <form action="">
@@ -86,6 +85,7 @@ function limpar(){
         <span>resultado: {resultado}</span>
     </form>
     </div>
+   
  </>
  )
  
