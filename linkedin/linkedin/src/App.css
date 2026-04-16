@@ -1,0 +1,64 @@
+body{
+  background:#0f1720;
+  color:white;
+  font-family:sans-serif;
+}
+
+.container{
+  display:flex;
+  gap:20px;
+  padding:20px;
+}
+
+.main{
+  flex:3;
+}
+
+.sidebar{
+  flex:1;
+}
+
+.card{
+  background:#1c252e;
+  padding:20px;
+  border-radius:10px;
+  margin-bottom:20px;
+}
+
+.highlights{
+  display:flex;
+  gap:15px;
+}
+
+.highlight-card img{
+  width:100%;
+  border-radius:8px;
+}
+
+.avatar{
+  width:120px;
+  border-radius:50%;
+}
+
+.user{
+  display:flex;
+  gap:10px;
+  margin-bottom:15px;
+}
+
+button{
+  padding:8px 15px;
+  border:none;
+  border-radius:20px;
+  background:#0a66c2;
+  color:white;
+}
+
+.outline{
+  background:transparent;
+  border:1px solid white;
+}
+
+.nome{
+  color: white;
+}
