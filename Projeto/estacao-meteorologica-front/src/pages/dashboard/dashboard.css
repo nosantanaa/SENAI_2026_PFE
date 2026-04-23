@@ -1,0 +1,150 @@
+/* ===== RESET ===== */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/* ===== CORES ===== */
+:root{
+  --bg:#140a24;
+  --card:#1f1235;
+  --primary:#7c3aed;
+  --text:#e5e7eb;
+  --muted:#9ca3af;
+}
+
+/* ===== BODY ===== */
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== NAVBAR ===== */
+.navbar{
+  height:70px;
+  background:#5b2c91;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 30px;
+  color:white;
+}
+
+.navbar a{
+  color:white;
+  text-decoration:none;
+  margin-left:20px;
+}
+
+/* ===== CONTAINER ===== */
+.dashboard{
+  padding:30px;
+}
+
+/* ===== GRID ===== */
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+
+/* ===== CARD ===== */
+.card{
+  background:var(--card);
+  border-radius:12px;
+  padding:20px;
+  box-shadow:0 6px 20px rgba(0,0,0,0.4);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+}
+
+/* ===== TEXTOS ===== */
+.card-title{
+  font-size:14px;
+  color:var(--muted);
+}
+
+.card-value{
+  font-size:28px;
+  font-weight:bold;
+  color:white;
+  margin-top:8px;
+}
+
+/* ===== GRÁFICO ===== */
+.graph{
+  margin-top:30px;
+  background:var(--card);
+  padding:20px;
+  border-radius:12px;
+}
+
+/* ===== TABELA ===== */
+.table{
+  width:100%;
+  margin-top:30px;
+  border-collapse:collapse;
+}
+
+.table th{
+  text-align:left;
+  padding:10px;
+  color:var(--muted);
+}
+
+.table td{
+  padding:10px;
+  border-top:1px solid #2d1f4d;
+}
+
+.card{
+  color: white;
+}
+
+/* CENTRALIZA A SECTION */
+.tabela{
+  max-width:800px;
+  margin:40px auto; /* centraliza horizontal */
+  text-align:center;
+}
+
+/* TÍTULO */
+.tabela h6{
+  margin-bottom:15px;
+  font-size:16px;
+  color:#e5e7eb;
+}
+
+/* TABELA */
+.tabela table{
+  width:100%;
+  border-collapse:collapse;
+  background:#1f1235;
+  border-radius:10px;
+  overflow:hidden;
+}
+
+/* CABEÇALHO */
+.tabela th{
+  padding:12px;
+  background:#2a1b47;
+  color:#a78bfa;
+}
+
+/* CÉLULAS */
+.tabela td{
+  padding:12px;
+  color:#ffffff;
+  border-top:1px solid #2d1f4d;
+}
+
+/* CENTRALIZAR TEXTO DAS COLUNAS */
+.tabela th,
+.tabela td{
+  text-align:center;
+}

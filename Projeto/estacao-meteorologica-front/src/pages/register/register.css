@@ -1,0 +1,178 @@
+/* CONTAINER */
+.login-container{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#1b102b,#2a1450);
+}
+
+/* BOX */
+.login-box{
+  width:900px;
+  height:520px;
+  display:flex;
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:0 20px 50px rgba(0,0,0,0.5);
+  background:#fff;
+}
+
+/* IMAGEM */
+.login-image{
+  width:50%;
+  position:relative;
+}
+
+.login-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  filter:brightness(0.7);
+}
+
+/* TEXTO SOBRE IMAGEM */
+.image-overlay{
+  position:absolute;
+  bottom:30px;
+  left:30px;
+  color:#fff;
+}
+
+.image-overlay h1{
+  font-size:22px;
+  max-width:300px;
+}
+
+/* FORM SIDE */
+.login-form-side{
+  width:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#fafafa;
+}
+
+/* WRAPPER */
+.form-wrapper{
+  width:80%;
+}
+
+/* TITULOS */
+.form-wrapper h2{
+  margin-bottom:5px;
+  color:#2a1450;
+}
+
+.form-wrapper p{
+  margin-bottom:20px;
+  color:#6b7280;
+  font-size:14px;
+}
+
+/* FORM */
+.login-form{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+/* INPUT GROUP */
+.input-group{
+  position:relative;
+}
+
+/* INPUT */
+.input-group input{
+  width:100%;
+  padding:14px;
+  border:1px solid #ddd;
+  border-radius:8px;
+  outline:none;
+  background:#fff;
+  font-size:14px;
+  transition:0.3s;
+}
+
+/* FOCO */
+.input-group input:focus{
+  border-color:#7c3aed;
+  box-shadow:0 0 0 3px rgba(124,58,237,0.2);
+}
+
+/* LABEL FLUTUANTE */
+.input-group label{
+  position:absolute;
+  left:12px;
+  top:50%;
+  transform:translateY(-50%);
+  background:#fafafa;
+  padding:0 5px;
+  font-size:14px;
+  color:#6b7280;
+  pointer-events:none;
+  transition:0.3s;
+}
+
+/* ANIMAÇÃO LABEL */
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label{
+  top:-8px;
+  font-size:12px;
+  color:#7c3aed;
+}
+
+/* BOTÃO CADASTRO */
+.btn-login{
+  margin-top:10px;
+  padding:14px;
+  border:none;
+  border-radius:8px;
+  background:linear-gradient(135deg,#7c3aed,#6d28d9);
+  color:white;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.btn-login:hover{
+  transform:translateY(-2px);
+  box-shadow:0 10px 20px rgba(124,58,237,0.4);
+}
+
+/* BOTÃO VOLTAR */
+.btn-voltar{
+  display:block;
+  margin-top:15px;
+  text-align:center;
+  text-decoration:none;
+  padding:10px;
+  border-radius:8px;
+  border:1px solid #7c3aed;
+  color:#7c3aed;
+  font-weight:500;
+  transition:0.3s;
+}
+
+.btn-voltar:hover{
+  background:#7c3aed;
+  color:#fff;
+}
+
+/* RESPONSIVO */
+@media(max-width:900px){
+  .login-box{
+    flex-direction:column;
+    height:auto;
+  }
+
+  .login-image{
+    width:100%;
+    height:200px;
+  }
+
+  .login-form-side{
+    width:100%;
+    padding:20px 0;
+  }
+}
