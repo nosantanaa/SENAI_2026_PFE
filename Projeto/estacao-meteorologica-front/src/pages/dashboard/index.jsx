@@ -37,7 +37,7 @@ export default function Dashboard(){
                 <thead>
                     <tr>
                         <th>horario</th>
-                        <th>tem.</th>
+                        <th>temperatura</th>
                         <th>umidade</th>
                         <th>vento</th>
                     </tr>

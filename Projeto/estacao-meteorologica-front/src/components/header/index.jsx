@@ -15,7 +15,7 @@ export default function Header(){
                     </li>
                     
                     <li>
-                        <Link to='/dashboard'>Relatório</Link>
+                        <Link to='/relatorio'>Relatório</Link>
                     </li>
                     <li>
                         <Link to='/'>Sair</Link>

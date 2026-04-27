@@ -1,0 +1,120 @@
+.container {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Título */
+.container h3 {
+  font-size: 24px;
+  color: var(--text-h);
+}
+
+.container p {
+  color: var(--text);
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+/* Área de gráficos */
+.graficos {
+  height: 200px;
+  border-radius: 12px;
+  border: 2px dashed var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text);
+  opacity: 0.6;
+  transition: border-color 0.3s;
+}
+
+.graficos:hover {
+  border-color: var(--accent);
+}
+
+/* Tabela */
+.tabela-leituras {
+  background: var(--accent-bg);
+  border-radius: 12px;
+  padding: 20px;
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.tabela-leituras:hover {
+  border-color: var(--accent-border);
+}
+
+/* Table base */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+/* Cabeçalho */
+thead {
+  background: var(--accent);
+  color: white;
+}
+
+th {
+  padding: 12px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+/* Linhas */
+td {
+  padding: 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+/* Zebra effect */
+tbody tr:nth-child(even) {
+  background: var(--social-bg);
+}
+
+/* Hover linha */
+tbody tr {
+  transition: background 0.3s;
+}
+
+tbody tr:hover {
+  background: var(--accent-bg);
+}
+
+/* Qualidade do ar (cores dinâmicas) */
+td:nth-child(2) {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+td:nth-child(2):contains("boa") {
+  color: #2ecc71;
+}
+
+td:nth-child(2):contains("moderada") {
+  color: #f1c40f;
+}
+
+td:nth-child(2):contains("ruim") {
+  color: #e74c3c;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  table {
+    font-size: 12px;
+  }
+
+  th, td {
+    padding: 8px;
+  }
+}
