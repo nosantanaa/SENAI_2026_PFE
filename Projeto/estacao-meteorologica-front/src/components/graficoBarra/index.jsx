@@ -1,5 +1,5 @@
 import {Chart as ChartJS,
-    CategoryScale,
+     CategoryScale,
     LinearScale,
     BarElement,
     Title,
@@ -7,6 +7,15 @@ import {Chart as ChartJS,
     Legend
 }
 
+ChartJS.register(
+    CategoryScale,
+    LinearScale,
+    BarElement,
+    Title,
+    Tooltip,
+    Legend
+)
+
 export default function GraficoBarra(){
-    
+    return()
 }
