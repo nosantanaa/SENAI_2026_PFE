@@ -1,0 +1,52 @@
+.graph {
+  margin-top: 30px;
+  background: var(--card);
+  padding: 20px;
+  border-radius: 12px;
+  height: 350px; /* tamanho médio */
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+  transition: 0.3s;
+}
+
+.graph:hover {
+  transform: translateY(-3px);
+}
+
+.graficos {
+  margin-top: 20px;
+}
+
+.graficos h6 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.graficos > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px; /* espaço entre gráficos */
+}
+.grafico-container {
+  background: var(--card);
+  padding: 25px;
+  border-radius: 14px;
+
+  border: 1px solid #2d1f4d;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+
+  height: 200px;
+
+  transition: 0.3s;
+}
+
+.grafico-container:hover {
+  transform: translateY(-4px);
+  border-color: #7c3aed;
+}
+
+@media (max-width: 900px) {
+  .graficos > div {
+    grid-template-columns: 1fr;
+  }
+}
+

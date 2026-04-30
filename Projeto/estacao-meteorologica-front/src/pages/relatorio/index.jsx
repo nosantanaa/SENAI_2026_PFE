@@ -1,5 +1,6 @@
 import Header from '../../components/header'
 import './relatorio.css'
+import '../../components/graficoBarra'
 
 export default function Relatorio(){
     const leituras = [
