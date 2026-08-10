@@ -24,6 +24,7 @@ export default function(){
                 </div>
             </section>
         </main>
+        <Footer/>
         </>
     )
 }
