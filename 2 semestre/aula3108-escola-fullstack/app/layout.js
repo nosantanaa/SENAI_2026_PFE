@@ -12,8 +12,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Escola Futuro",
-  description: "Página inicial de uma escola com foco em educação, inovação e desenvolvimento integral.",
+  title: "Projeto Escola",
+  description: "Sistema escolar para cadastro e acompanhamento de alunos e notas.",
 };
 
 export default function RootLayout({ children }) {

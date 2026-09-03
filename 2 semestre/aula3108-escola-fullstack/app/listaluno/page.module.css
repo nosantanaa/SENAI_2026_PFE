@@ -1,0 +1,137 @@
+.page {
+  min-height: calc(100vh - 78px);
+  padding: clamp(2rem, 5vw, 4.5rem) 1.25rem;
+  background:
+    radial-gradient(circle at 92% 0%, rgba(51, 190, 177, 0.18), transparent 30%),
+    linear-gradient(135deg, #f3f8fc 0%, #e6f1f4 100%);
+  color: #10213d;
+}
+
+.shell {
+  width: min(1080px, 100%);
+  margin: 0 auto;
+}
+
+.intro {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.eyebrow {
+  margin-bottom: 0.8rem;
+  color: #168b82;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.title {
+  margin-bottom: 0.8rem;
+  color: #10213d;
+  font-size: clamp(2.1rem, 5vw, 3.8rem);
+  line-height: 1.04;
+  letter-spacing: -0.04em;
+}
+
+.description {
+  max-width: 590px;
+  color: #557087;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.counter {
+  flex: 0 0 auto;
+  padding: 0.9rem 1.1rem;
+  border-left: 3px solid #2eaa9d;
+  background: rgba(255, 255, 255, 0.72);
+  color: #557087;
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+
+.counter strong {
+  display: block;
+  color: #10213d;
+  font-size: 1.55rem;
+  line-height: 1;
+}
+
+.tableCard {
+  overflow: hidden;
+  border: 1px solid rgba(16, 33, 61, 0.08);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 24px 60px rgba(16, 52, 75, 0.12);
+}
+
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.table th,
+.table td {
+  padding: 1.15rem 1.5rem;
+}
+
+.table th {
+  border-bottom: 1px solid #dce8ed;
+  background: #10213d;
+  color: #dceaff;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.table td {
+  border-bottom: 1px solid #e8f0f3;
+  color: #29445d;
+  font-size: 0.95rem;
+}
+
+.table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.table tbody tr:hover {
+  background: #f5fbfb;
+}
+
+.id,
+.ra {
+  color: #168b82 !important;
+  font-weight: 800;
+}
+
+.name {
+  color: #10213d !important;
+  font-weight: 700;
+}
+
+@media (max-width: 620px) {
+  .intro {
+    display: block;
+  }
+
+  .counter {
+    display: inline-block;
+    margin-top: 1.25rem;
+  }
+
+  .table th,
+  .table td {
+    padding: 1rem;
+  }
+}

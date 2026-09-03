@@ -46,17 +46,17 @@ export default function Home() {
       <header className={styles.header}>
         <div className={styles.brand}>
           <span className={styles.brandMark}>E</span>
-          <span>Escola Futuro</span>
+          <span>Projeto Escola</span>
         </div>
 
         <nav className={styles.nav} aria-label="Navegação principal">
-          <a href="#sobre">Sobre</a>
-          <a href="#estrutura">Estrutura</a>
-          <a href="#atividades">Atividades</a>
-          <a href="#contato">Contato</a>
+          <a href="/cadaluno">Cadastro de alunos</a>
+          <a href="/listaluno">Lista de alunos</a>
+          <a href="/notaluno">Cadastro de notas</a>
+          <a href="/listnota">Lista de notas</a>
         </nav>
 
-        <a href="#contato" className={styles.headerButton}>Fale conosco</a>
+        <a href="/cadaluno" className={styles.headerButton}>Cadastrar aluno</a>
       </header>
 
       <main className={styles.main}>
@@ -70,7 +70,7 @@ export default function Home() {
             </p>
 
             <div className={styles.actions}>
-              <a href="#estrutura" className={styles.primaryButton}>Conheça a escola</a>
+              <a href="/cadaluno" className={styles.primaryButton}>Cadastrar aluno</a>
               <a href="#atividades" className={styles.secondaryButton}>Veja as atividades</a>
             </div>
 
@@ -138,7 +138,7 @@ export default function Home() {
             <span className={styles.kicker}>Faça parte</span>
             <h2>Seu filho merece um ambiente de excelência.</h2>
           </div>
-          <a href="mailto:contato@escolafuturo.com.br" className={styles.primaryButton}>Entre em contato</a>
+          <a href="/cadaluno" className={styles.primaryButton}>Cadastrar aluno</a>
         </section>
       </main>
     </div>
