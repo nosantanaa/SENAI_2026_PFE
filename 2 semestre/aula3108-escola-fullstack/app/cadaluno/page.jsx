@@ -3,11 +3,38 @@ import { useState } from "react";
 import Header from "../components/header";
 import styles from "./page.module.css";
 
+
 export default function CadAluno() {
     const [nome, setNome] = useState('');
     const [idade, setIdade] = useState('');
     const [serie, setSerie] = useState('');
     const [ra, setRa] = useState('');
+
+   
+    async function cadastrarAluno(evento){
+        evento.preventDefault();
+        const resposta = await fetch('/api/alunos', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ 
+                nome, 
+                idade, 
+                serie, 
+                ra 
+            })
+        });
+
+        const dados = await resposta.json();
+        alert(dados.mensagem || dados.erro);
+        if (resposta.ok) {
+            setNome('');
+            setIdade('');
+            setSerie('');
+            setRa('');
+        }
+    }
 
     return (
         <>
@@ -44,7 +71,7 @@ export default function CadAluno() {
                             </ol>
                         </aside>
 
-                        <form className={styles.form} action="">
+                        <form className={styles.form} onSubmit={cadastrarAluno}>
                             <div className={styles.formHeader}>
                                 <h2>Dados do aluno</h2>
                                 <p>Todos os campos são obrigatórios.</p>

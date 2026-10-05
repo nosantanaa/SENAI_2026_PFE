@@ -1,14 +1,14 @@
 import db from "../../db/banco.js";
 import { NextResponse } from "next/server";
 
-export async function ListAlunos(request) {     
+export async function GET(request) {     
 
     const alunos = db.prepare("SELECT * FROM alunos ORDER BY nome").all();
 
     return NextResponse.json(alunos);
-}
+    }
 
-export async function SalvaAlunos(request) {
+export async function POST(request) {
     try {
 
         const dados = await request.json();
@@ -35,7 +35,7 @@ export async function SalvaAlunos(request) {
 }
 
 // editar aluno pelo id_aluno
-export async function EditAluno(request) {
+export async function PUT(request) {
     try {
         const dados = await request.json();
         const sql = db.prepare(`
@@ -54,7 +54,7 @@ export async function EditAluno(request) {
 }
 
 // excluir aluno pelo id_aluno
-export async function DeleteAluno(request) {
+export async function DELETE(request) {
     try {
         const dados = await request.json();
         const sql = db.prepare(`DELETE FROM alunos WHERE id_aluno = ?`);
